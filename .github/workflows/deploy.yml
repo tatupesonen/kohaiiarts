@@ -42,4 +42,5 @@ jobs:
           npm ci
           npm run build
           sudo chown -R www-data:www-data /srv/kohaiis.art
+          php artisan storage:unlink && php artisan storage:link
         EOF
